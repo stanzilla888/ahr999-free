@@ -13,9 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          ref: ${{ github.head_ref }}
+        uses: actions/checkout@v7
 
       - name: Fetch AHR999 data
         run: |
